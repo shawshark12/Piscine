@@ -6,7 +6,7 @@
 /*   By: npungkor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/27 16:43:29 by npungkor          #+#    #+#             */
-/*   Updated: 2024/01/28 15:35:07 by npungkor         ###   ########.fr       */
+/*   Updated: 2024/01/29 01:41:39 by npungkor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ int	ft_sqrt(int nb)
 	i = 1;
 	if (nb <= 0)
 		return (0);
-	while (i <=(unsigned) nb)
+	while (i <= (unsigned int) nb)
 	{
-		if (i * i ==(unsigned) nb)
+		if (i * i == (unsigned int) nb)
 		{
 			return (i);
 		}

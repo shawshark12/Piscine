@@ -6,7 +6,7 @@
 /*   By: npungkor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 22:36:56 by npungkor          #+#    #+#             */
-/*   Updated: 2024/01/26 00:13:19 by npungkor         ###   ########.fr       */
+/*   Updated: 2024/01/28 19:16:47 by npungkor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,3 @@ int	ft_strlen(char *str)
 	printf("12\n");
 	ft_strlen("abcdefghijk");
 }*/
-

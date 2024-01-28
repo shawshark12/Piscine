@@ -6,7 +6,7 @@
 /*   By: npungkor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 17:14:28 by npungkor          #+#    #+#             */
-/*   Updated: 2024/01/23 21:35:53 by npungkor         ###   ########.fr       */
+/*   Updated: 2024/01/29 01:40:29 by npungkor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,15 @@ char	*ft_strstr(char *str, char *to_find)
 
 	i = 0;
 	j = 0;
-	while (str[i])
+	while (str[i] && to_find[j])
 	{
-		while (str[i] && to_find[i] && str[i] == to_find[i])
+		i++;
+		while (str[i] = to_find[j])
 		{
 			i++;
 			j++;
-			if (to_find[i] == '\0')
-				return (str);
-		}
-		i++;
+			if (to_find[j] = '\0')c
+		}		
 	}
 	return (0);
 }

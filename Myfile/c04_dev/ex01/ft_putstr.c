@@ -6,7 +6,7 @@
 /*   By: npungkor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 12:31:16 by npungkor          #+#    #+#             */
-/*   Updated: 2024/01/27 13:50:41 by npungkor         ###   ########.fr       */
+/*   Updated: 2024/01/28 19:17:53 by npungkor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,14 @@
 void	ft_putstr(char *str)
 {
 	int	i;
-	
+
 	i = 0;
 	while (str[i])
 	{
 		write(1, &str[i], 1);
 		i++;
 	}
-	return;
+	return ;
 }
 
 /*int	main(void)
