@@ -6,22 +6,26 @@
 /*   By: npungkor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/28 23:32:05 by npungkor          #+#    #+#             */
-/*   Updated: 2024/01/29 00:40:20 by npungkor         ###   ########.fr       */
+/*   Updated: 2024/01/29 15:17:35 by npungkor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
 
-int	ft_strlen(char *str)
+void	ft_putstr(char *str)
 {
 	int	i;
 
 	i = 0;
 	while (str[i])
+	{
+		write (1, &str[i], 1);
 		i++;
-	return (i);
+	}
+	write (1, "\n", 1);
 }
+
 int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
@@ -38,7 +42,7 @@ int	ft_strcmp(char *s1, char *s2)
 	return (0);
 }
 
-void	swap(char **a, char **b)
+void	ft_swap(char **a, char **b)
 {
 	char	*superman;
 
@@ -47,22 +51,31 @@ void	swap(char **a, char **b)
 	*b = superman;
 }
 
-int	main(int ac, char av[])
+int	main(int argc, char **argv)
 {
 	int	i;
 	int	j;
-	int	min;
+	int	k;
+	int	index;
 
 	i = 1;
-	while (i < ac)
+	j = 1;
+	k = 1;
+	index = argc;
+	while (i < argc)
 	{
-		min = i;
-		j = i + 1;
-		if (ft_strmp(av[j], av[min]) <= 0)
-			min = j;
-		j++;
+		while (j < index - 1)
+		{
+			if (ft_strcmp(argv[j], argv[j + 1]) > 0)
+				ft_swap(&argv[j], &argv[j + 1]);
+			j++;
+		}
+		j = 1;
+		i++;
 	}
-	swap(&av[min], &av[i]);
-
+	while (k < argc)
+	{
+		ft_putstr(argv[k]);
+		k++;
+	}
 }
-

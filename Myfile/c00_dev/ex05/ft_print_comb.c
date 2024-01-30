@@ -1,40 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_params.c                                  :+:      :+:    :+:   */
+/*   ft_print_comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: npungkor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/26 00:39:52 by npungkor          #+#    #+#             */
-/*   Updated: 2024/01/29 15:11:26 by npungkor         ###   ########.fr       */
+/*   Created: 2024/01/31 00:23:05 by npungkor          #+#    #+#             */
+/*   Updated: 2024/01/31 00:39:03 by npungkor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
-
-void	ft_putstr(char *str)
+void	ft_print_comb(void)
 {
-	int	a;
+	char	A;
+	char	B;
+	char 	C;
 
-	a = 0;
-	while (str[a])
+	A = 0
+	while (A <= 7)
 	{
-		write(1, &str[a], 1);
-		a++;
-	}
-}
-
-int	main(int argc, char **argv)
-{
-	int	i;
-
-	i = 1;
-	while (i < argc)
-	{
-		ft_putstr(argv[i]);
-		write(1, "\n", 1);
-		i++;
+		while (B <= 8)
+		{
+			while (C <= 9)
+			{
+				write (1, &A, 1)c
+			}
+		}
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: npungkor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/25 16:34:58 by npungkor          #+#    #+#             */
-/*   Updated: 2024/01/28 00:21:38 by npungkor         ###   ########.fr       */
+/*   Updated: 2024/01/29 15:09:37 by npungkor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ void	ft_putchar(char str)
 {
 	write (1, &str, 1);
 }
+
 int	main(int argc, char *argv[])
 {
 	int	i;
